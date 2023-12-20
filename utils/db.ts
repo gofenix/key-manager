@@ -1,7 +1,7 @@
 import { createClient } from "supabase";
 
 const supabaseUrl = "https://ttsogebedhkttgyrgjtc.supabase.co";
-const supabaseKey = Deno.env.get("SUPABASE_KEY");
+const supabaseKey = Deno.env.get("SUPABASE_KEY") || '123456';
 const client = createClient(supabaseUrl, supabaseKey);
 
 export async function getAll() {
