@@ -5,11 +5,10 @@ const supabaseKey = Deno.env.get("SUPABASE_KEY") || '123456';
 const client = createClient(supabaseUrl, supabaseKey);
 
 export async function getAll() {
-  let { data: key_manager, error } = await client
+  let { data, error } = await client
     .from("key_manager")
     .select("*");
-  console.log(key_manager);
-  console.log(error);
+  return data
 }
 
 export async function getResultByName(name: string): Promise<string> {
