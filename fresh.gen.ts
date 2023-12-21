@@ -7,6 +7,7 @@ import * as $_app from "./routes/_app.tsx";
 import * as $api_joke from "./routes/api/joke.ts";
 import * as $api_manager_key_ from "./routes/api/manager/[key].ts";
 import * as $api_refresh from "./routes/api/refresh.ts";
+import * as $api_rss from "./routes/api/rss.ts";
 import * as $greet_name_ from "./routes/greet/[name].tsx";
 import * as $index from "./routes/index.tsx";
 import * as $Counter from "./islands/Counter.tsx";
@@ -19,6 +20,7 @@ const manifest = {
     "./routes/api/joke.ts": $api_joke,
     "./routes/api/manager/[key].ts": $api_manager_key_,
     "./routes/api/refresh.ts": $api_refresh,
+    "./routes/api/rss.ts": $api_rss,
     "./routes/greet/[name].tsx": $greet_name_,
     "./routes/index.tsx": $index,
   },
